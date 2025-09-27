@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b132b;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #1c2541;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: #ff6b6b;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url("Main.jpg") top/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.btn {
+  background: linear-gradient(135deg, #ff6b6b, #e63946);
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.8);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(255, 107, 107, 1);
+}
+
+/* Categories */
+.categories {
+  text-align: center;
+  padding: 60px 20px;
+  background: #1c2541;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  padding: 25px 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Category Colors */
+.category-card.pizza {
+  background: linear-gradient(135deg, #ff6b6b, #e63946);
+}
+
+.category-card.burger {
+  background: linear-gradient(135deg, #f77f00, #fcbf49);
+  color: #222;
+}
+
+.category-card.north {
+  background: linear-gradient(135deg, #ffb703, #fb8500);
+  color: #222;
+}
+
+.category-card.south {
+  background: linear-gradient(135deg, #06d6a0, #118ab2);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0b132b;
+  font-size: 0.9rem;
+  color: #bbb;
+}
